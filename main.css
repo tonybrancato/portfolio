@@ -1,5 +1,40 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: black;
   text-align: center;
   color: white;
+  padding: 0;
+}
+
+section {
+  border: 1px solid white;
+  /* margin: 0 auto; */
+}
+
+section div {
+  border: 1px solid white;
+  
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.project-title{
+  vertical-align: middle;
+  padding: 0;
+}
+
+.project-box {
+  padding: 0;
+}
+
+#projects {
+  padding: 0;
+}
+
+.project {
+  height: 200px;
 }
