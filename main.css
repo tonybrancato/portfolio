@@ -1,16 +1,22 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: black;
   text-align: center;
   color: white;
   padding: 0;
+  font-family: 'roboto';
 }
 
 section {
   border: 1px solid white;
   /* margin: 0 auto; */
+}
+
+.title {
+  font-family: 'lato';
 }
 
 section div {
@@ -20,6 +26,30 @@ section div {
 
 .row {
   margin: 0 auto;
+}
+
+#intro, #projects, #tech, #contact {
+  height: 100vh;
+}
+
+#intro {
+  background-image: url('./imgs/aqua-poly.jpg');
+  background-size: cover;
+}
+
+#projects {
+  background-image: url('./imgs/polygon-7.jpg');
+  background-size: cover;
+}
+
+#tech {
+  background-image: url('./imgs/polygon-12.jpg');
+  background-size: cover;
+}
+
+#contact {
+  background-image: url('./imgs/polygon-10.jpg');
+  background-size: cover;
 }
 
 .project-title{
