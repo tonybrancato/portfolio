@@ -3,14 +3,14 @@
 }
 
 body {
-  text-align: center;
+  /* text-align: center; */
   color: white;
   padding: 0;
-  font-family: 'roboto';
+  font-family: 'Work Sans', sans-serif;
 }
 
-.title {
-  font-family: 'lato';
+.title, h1, .project-title {
+  font-family: 'Space Mono', monospace;
 }
 
 .row {
@@ -27,7 +27,7 @@ body {
   height: 100%; 
 }
 
-#intro, #skills, #contact {
+ #skills, #contact {
   height: 100vh;
 }
 
@@ -35,16 +35,30 @@ body {
   box-shadow: 0 0 20px #333;
 }
 
-#intro {
+.intro {
   background-image: url('./imgs/aqua-poly.jpg');
+  filter: grayscale(30%);
+  height: 90vh;
+}
+
+.intro-header {
+  padding-left: 50px;
+  font-size: 20pt;
+}
+
+.name {
+  font-size: 36pt;
+  letter-spacing: 1.1px;
 }
 
 #projects {
   background-image: url('./imgs/polygon-7.jpg');
+  filter: grayscale(30%);
 }
 
 #skills {
   background-image: url('./imgs/polygon-22.jpg');
+  filter: grayscale(30%);
 }
 
 #contact {
@@ -52,7 +66,8 @@ body {
 }
 
 .section-title {
-  text-align: left;
+  font-size: 36pt;  
+  margin-bottom: 20px;
 }
 
 .profile-pic {
@@ -63,12 +78,14 @@ body {
 .profile-pic img {
   max-width: 100%;
   border-radius: 100pt;
+  box-shadow: 0 0 20px #222;
   margin: 14px 0 30px 0;
   display: inline-block;
 }
+
 .intro-content-box {
-  /* max-height: 300px; */
-  padding: 110px 40px 110px 40px;
+  padding: 50px 5px 30px 20px;
+  font-size: 20px;
 }
 
 .intro-content {
@@ -86,25 +103,36 @@ body {
 .contact-icons {
   display: inline-block;
   font-size: 36pt;
+  margin-top: 20px;
+}
+
+.contact-text {
+  font-family: 'Space Mono', monospace;
 }
 
 .contact-icons a {
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out, font-size 0.6s ease-in-out;
   text-decoration: none;
-  color: white;
+  color: snow;
 }
 
 .contact-icons a:hover {
-  color: wheat;
+  color: white;
+  font-size: 42pt;
 }
 
 .contact-icons i {
   cursor: pointer;
 }
 
-.project-title{
+.project-title {
   vertical-align: middle;
   padding: 0;
+  cursor: pointer;
+}
+
+a .project-title {
+  color: white;
 }
 
 .project img {
@@ -148,5 +176,142 @@ body {
 }
 
 .project-content p {
-  text-align: left;
+  font-size: 14.8pt;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .intro, #skills, #contact, #projects {
+    height: 100%;
+  }
+  .intro-header {
+    padding: 0;
+    font-size: 14pt;
+  }
+  .intro-content {
+    font-size: 14pt;
+    padding-left: 40px;
+  }
+  .name {
+    font-size: 22pt;
+  }
+  .section-title {
+    font-size: 25pt;  
+  }
+  .project-content p {
+    font-size: 12pt;
+  }
+  .intro-content-box {
+    padding: 0;
+  }
+  .intro-content {
+    max-height: none;
+  }
+  .contact-icons {
+    font-size: 20pt;
+  }
+  .project img {
+    margin-bottom: 20px;
+  }
+  .project-title {
+    font-size: 18pt;
+  }
+  .project-techs a {
+    display: block;
+  }
+  .project-techs li {
+    font-size: 18pt;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .intro, #skills, #contact, #projects {
+    height: 100%;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .intro, #skills, #contact, #projects {
+    height: 100%;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .intro, #skills, #contact, #projects {
+    height: 100%;
+  }
+  .intro-header {
+    padding: 0;
+    font-size: 14pt;
+  }
+  .intro-content {
+    font-size: 12pt;
+  }
+  .name {
+    font-size: 22pt;
+  }
+  .section-title {
+    font-size: 25pt;  
+  }
+  .project-content p {
+    font-size: 12pt;
+  }
+  .intro-content-box {
+    padding: 0;
+  }
+  .intro-content {
+    max-height: none;
+  }
+  .contact-icons {
+    font-size: 20pt;
+  }
+  .project img {
+    margin-bottom: 20px;
+  }
+  .project-title {
+    font-size: 18pt;
+  }
+  .project-techs a {
+    display: block;
+  }
+  .project-techs li {
+    font-size: 18pt;
+  }
 }
