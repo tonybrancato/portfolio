@@ -12,21 +12,27 @@ body {
 .title {
   font-family: 'lato';
 }
-/* 
-section div {
-  border: 1px solid white;
-} */
 
 .row {
   margin: 0 auto;
 }
 
-#intro, #projects, #tech, #contact {
-  height: 100vh;
-  padding: 65px 20px 20px 20px; 
+.intro, #skills, #contact, #projects {
+  padding: 65px 20px 65px 20px; 
   background-size: cover;
   background-position: center;
-  /* overflow: auto; */
+}
+
+#projects {
+  height: 100%; 
+}
+
+#intro, #skills, #contact {
+  height: 100vh;
+}
+
+#projects, #contact {
+  box-shadow: 0 0 20px #333;
 }
 
 #intro {
@@ -37,12 +43,63 @@ section div {
   background-image: url('./imgs/polygon-7.jpg');
 }
 
-#tech {
-  background-image: url('./imgs/polygon-12.jpg');
+#skills {
+  background-image: url('./imgs/polygon-22.jpg');
 }
 
 #contact {
   background-image: url('./imgs/polygon-10.jpg');
+}
+
+.section-title {
+  text-align: left;
+}
+
+.profile-pic {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.profile-pic img {
+  max-width: 100%;
+  border-radius: 100pt;
+  margin: 14px 0 30px 0;
+  display: inline-block;
+}
+.intro-content-box {
+  /* max-height: 300px; */
+  padding: 110px 40px 110px 40px;
+}
+
+.intro-content {
+  display: inline-block;
+  max-width: 100%;
+  text-align: left;
+  max-height: 150px;
+}
+
+.intro-contact {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-icons {
+  display: inline-block;
+  font-size: 36pt;
+}
+
+.contact-icons a {
+  transition: color 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.contact-icons a:hover {
+  color: wheat;
+}
+
+.contact-icons i {
+  cursor: pointer;
 }
 
 .project-title{
@@ -59,7 +116,7 @@ section div {
 
 .project img:hover {
   box-shadow: 0 0 25px white;
-  transform: scale(1.1);
+  transform: scale(1.2);
   cursor: pointer;
 }
 
@@ -70,10 +127,26 @@ section div {
 .project {
   min-width: 100%;
   margin-top: 30px;
-  max-height: 20vh;
 }
 
-.project::after {
-  content: "";
-  border-bottom: 4px solid white;
+.project-techs ul {
+  text-align: left;
+  border-bottom: 2px solid white;
+  padding: 0;
+}
+
+.project-techs li {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30pt;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.gamekeeper li {
+  margin-right: 12px;
+}
+
+.project-content p {
+  text-align: left;
 }
