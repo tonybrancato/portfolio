@@ -21,7 +21,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -56,7 +56,7 @@
     <section id="intro">
       <div class="intro">
         <div class="container">
-          <div class="container">
+          <div class="container intro-header">
             <p class="intro-top">Hello! I’m,</p> 
             <h1 class="name">TONY BRANCATO</h1> 
             <p class="intro-bottom">a web developer based in Jacksonville, FL.</p>
@@ -83,9 +83,9 @@
           </div>
           <div class="container intro-contact">
             <div class="row contact-icons">
-              <a href="https://www.linkedin.com/in/tony-brancato-a26903105/" target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a><span> |</span>
-              <a href="mailto:tonybrancato1@gmail.com" target="_blank"><i class="far fa-envelope"> E-Mail</i></a><span> |</span>
-              <a href="https://github.com/tonybrancato" target="_blank"><i class="fab fa-github"> Git Hub</i></a>
+              <a href="https://www.linkedin.com/in/tony-brancato-a26903105/" target="_blank"><i class="fab fa-linkedin"> <span class="contact-text">LinkedIn</span></i></a><span> |</span>
+              <a href="mailto:tonybrancato1@gmail.com" target="_blank"><i class="far fa-envelope"> <span class="contact-text">E-Mail</span></i></a><span> |</span>
+              <a href="https://github.com/tonybrancato" target="_blank"><i class="fab fa-github"> <span class="contact-text">Git Hub</span></i></a>
             </div>
           </div>
         </div>
@@ -95,19 +95,22 @@
     <section id="projects" role="content">
       <div class="section container">
         <div class="project-title">
-            <h1 class="section-title"> <i class="fas fa-terminal"></i> My Projects</h1>
+          <h1 class="section-title"> <i class="fas fa-terminal"></i> My Projects</h1>
         </div>
         <div class="project-box">
 
           <div class="row project">
             <div class="col-lg-3">
-                <!-- <div><p>Good in the Hood</p></div> -->
+              <a target="_blank" href="https://tonybrancato.github.io/good-in-the-hood/">
                 <img alt="Good in the Hood App" src="./imgs/hood.png">
-              </div>
+              </a>
+            </div>
               <div class=" col-lg-9">
                 <div class="project-techs">
                   <ul class="good-hood">
-                    <li class="project-title">Good in the Hood</li>                      
+                    <a target="_blank" href="https://tonybrancato.github.io/good-in-the-hood/">
+                      <li><span class="project-title">Good in the Hood</span></li> 
+                    </a>                     
                     <li><i class="devicon-jquery-plain-wordmark"></i></li>
                     <li><i class="devicon-javascript-plain"></i></li>
                     <li><i class="devicon-html5-plain-wordmark"></i></li>
@@ -126,21 +129,26 @@
 
           <div class="row project">
             <div class="col-lg-3">
-                <!-- <div><p>GameKeeper</p></div> -->
-                <img alt="GameKeeper App" src="./imgs/gamekeeper.png">
+              <a href="https://quiet-oasis-80361.herokuapp.com/" target="_blank">
+                <img alt="GameKeeper App" src="./imgs/gamekeeper2.png">
+              </a> 
             </div>
             <div class="col-lg-9">
                 <div class="project-techs">
                   <ul class="gamekeeper">
-                    <li class="project-title">GameKeeper</li>                      
-                    <li><i class="devicon-nodejs-plain"></i></li>
-                    <li><i class="devicon-express-original"></i></li>   
-                    <li><i class="devicon-mongodb-plain"></i></li>
-                    <li><i class="devicon-jquery-plain-wordmark"></i></li>
-                    <li><i class="devicon-javascript-plain"></i></li>
-                    <li><i class="devicon-mocha-plain"></i></li>                               
-                    <li><i class="devicon-html5-plain-wordmark"></i></li>
-                    <li><i class="devicon-css3-plain-wordmark"></i></li>
+                    <a href="https://quiet-oasis-80361.herokuapp.com/" target="_blank">
+                      <li><span class="project-title">GameKeeper</span></li>  
+                    </a>
+                    <div>                  
+                      <li><i class="devicon-nodejs-plain"></i></li>
+                      <li><i class="devicon-express-original"></i></li>   
+                      <li><i class="devicon-mongodb-plain"></i></li>
+                      <li><i class="devicon-jquery-plain-wordmark"></i></li>
+                      <li><i class="devicon-javascript-plain"></i></li>
+                      <li><i class="devicon-mocha-plain"></i></li>                               
+                      <li><i class="devicon-html5-plain-wordmark"></i></li>
+                      <li><i class="devicon-css3-plain-wordmark"></i></li>
+                    </div>  
                   </ul>
                 </div>
                 <div class="project-content">
@@ -155,13 +163,16 @@
 
           <div class="row project">
             <div class="col-lg-3">
-                <!-- <div><p>Fit Pets</p></div> -->
+              <a href="https://peaceful-feynman-033f15.netlify.com/" target="_blank">
                 <img alt="Fit Pets App" src="./imgs/fitpets.png">
+              </a>
             </div>
             <div class="col-lg-9">
                 <div class="project-techs">
                   <ul class="fitpets">
-                    <li class="project-title">Fit Pets</li> 
+                    <a href="https://peaceful-feynman-033f15.netlify.com/" target="_blank">
+                      <li class="project-title">Fit Pets</li> 
+                    </a>
                     <li><i class="devicon-react-original-wordmark"></i></li>                     
                     <li><i class="devicon-nodejs-plain"></i></li>
                     <li><i class="devicon-express-original"></i></li>   
@@ -190,6 +201,23 @@
     <section id="skills" role="content">
       <div class="container section">
         <h1 class="section-title"><i class="fas fa-terminal"></i> My Skills</h1>
+      </div>
+      <div class="row">
+          <ul>
+              <li><i class="devicon-react-original-wordmark"></i></li>                     
+              <li><i class="devicon-nodejs-plain"></i></li>
+              <li><i class="devicon-express-original"></i></li>   
+              <li><i class="devicon-mongodb-plain"></i></li>
+              <li><i class="devicon-javascript-plain"></i></li>
+              <li><i class="devicon-mocha-plain"></i></li>                               
+              <li><i class="devicon-html5-plain-wordmark"></i></li>
+              <li><i class="devicon-css3-plain-wordmark"></i></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
       </div>
     </section>
 
