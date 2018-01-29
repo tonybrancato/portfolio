@@ -162,15 +162,15 @@ body {
 
 .contact-icons a, .nav-link, .navbar-inverse .navbar-brand{
   transition: color 0.3s ease-in-out, 
-              font-size 0.6s ease-in-out,
-              text-shadow 0.5s ease-in-out;
+              font-size 0.3s ease-in-out,
+              text-shadow 0.3s ease-in-out;
   text-decoration: none;
   color: white;
   text-shadow: 0 0 5px #000;
 }
 
 .contact-icons a:hover {
-  font-size: 38pt;
+  font-size: 40pt;
   color: #ffeb3b;
   text-shadow: 0 0 5px;
 }
@@ -270,15 +270,14 @@ ul.skill-list {
 }
 
 .skill-box span, .skill-box strong, .skill-box .skill-title {
-  transition: color 0.3s ease-in-out,
+  transition: color 0.3s ease-in,
               text-shadow 0.6s ease-in-out;  
 }
 
 .skill-box:hover span, .skill-box:hover strong, .skill-box:hover .skill-title {
   color: #ffeb3b;
   text-shadow: 1px 0 2px #000,
-               0 0 2px #ffeb3b,
-               1px 0 2px #000;
+               1 0 2px #ffeb3b;
                
 }
 
