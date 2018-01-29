@@ -58,9 +58,10 @@ body {
 
  #contact {
   height: 100vh;
+  box-shadow: 10px 10px 20px #333;
 }
 
-#projects, #contact {
+#projects {
   box-shadow: 0 0 20px #333;
 }
 
@@ -308,6 +309,16 @@ ul.skill-list {
 #contact .intro-contact{
   padding: 130px 0 130px 0;
 }
+
+footer {
+  color: #000;
+  background-color: #666;
+  height: 30px;
+  line-height: 32px;
+  text-align: right;
+  font-size: 10pt;
+}
+
 @media (min-width: 1281px) and (max-width: 1440px) {
   .intro, #skills, #contact, #projects {
     height: 100%;
