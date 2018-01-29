@@ -16,7 +16,7 @@
 <body>
   <header role="banner">
     <div class="container">
-      <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-faded">
+      <nav role="navigation" class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-faded">
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,7 +37,7 @@
         </nav>
     </div>
   </header>
-  <main>
+  <main role="main">
     <section id="intro">
       <div class="intro">
         <div class="container">
@@ -51,14 +51,14 @@
               <img alt="Tony Brancato" src="./imgs/placeholder.png">
             </div>
             <div class="col-lg-7 row intro-content-box">
-              <p class="intro-content">
+              <p role="contentinfo" class="intro-content">
                   I’m a full stack web developer and recent graduate of <a href="https://thinkful.com"><span class="yellow">
                   Thinkful</span></a>, where Ilearned to translate my passion for solving problems 
                   into writing code. I thoroughly enjoy implementing APIs, learning new libraries 
                   and frameworks, writing tests, and watching my code come to life. I believe 
                   that any problem can be represented technologically and solved programmatically.
               </p>
-              <p class="intro-content">
+              <p role="contentinfo" class="intro-content">
                   When I’m not working on a project I can typically be found in the kitchen 
                   honing my culinary skills, playing boardgames, or spending time with my 
                   family. I’m always looking for something new to learn and find fulfillment 
@@ -106,7 +106,7 @@
                   </ul>
                 </div>
                 <div class="project-content">
-                  <p>Good in the Hood allows a user to find restaurants and nightlife in the neighborhood 
+                  <p role="contentinfo">Good in the Hood allows a user to find restaurants and nightlife in the neighborhood 
                     they're currently standing in. The app is an API hack utilizing the Google Maps 
                     API and the Zomato API. Utilizing the HTML5 Geolocation, the user is able to pinpoint
                     their location and receive the most relevant results. The app also makes use of jQuery
@@ -138,7 +138,7 @@
                   </ul>
                 </div>
                 <div class="project-content">
-                  <p>GameKeeper allows you to keep track of what games you have and how often they're
+                  <p role="contentinfo">GameKeeper allows you to keep track of what games you have and how often they're
                     played, regardless of their medium. Utilizing Node.JS with the Express Framework
                     and MongoDB with Mongoose, a user can now keep track of every game they own. For 
                     the front-end, I used jQuery for DOM manipulation and traversaland Velocity.js 
@@ -170,7 +170,7 @@
                   </ul>
                 </div>
                 <div class="project-content">
-                  <p>Fit Pets can help you track your dogs health so you can ensure that they maintain
+                  <p role="contentinfo">Fit Pets can help you track your dogs health so you can ensure that they maintain
                     a healthy weight, or are on track to doing so. I used React for the front-end along
                     with Redux for maintaining state. On the backend, I used MongoDB and Mongoose, along 
                     with Node.js with the Express framework. Enzyme and Jest were used for unit testing
@@ -197,7 +197,7 @@
             <li><i class="devicon-html5-plain-wordmark"></i></li>
             <li><i class="devicon-css3-plain-wordmark"></i></li>                             
           </ul> 
-          <p>
+          <p role="contentinfo">
             When crafting on the front end I love using <strong>React</strong> to build user 
             interfaces. Finding new <strong>CSS</strong> tricks is quickly becoming a passion. There is 
             something inherintly exciting about seeing a UI and it's styles come to life. For state 
@@ -215,7 +215,7 @@
             <li><i class="devicon-mocha-plain"></i></li>
             <li><i class="devicon-heroku-plain"></i></li>                               
           </ul> 
-          <p>
+          <p role="contentinfo">
             The Back End is where I feel most at home when coding. I use <strong>Node.JS</strong> and the 
             <strong>Express</strong> framework. I use <strong>MongoDB</strong> for a database in conjunction 
             with <strong>Mongoose</strong> for schemas, business logic, and validation. For testing endpoints, 
@@ -232,7 +232,7 @@
             <li><i class="devicon-travis-plain"></i></li>
             <li><i class="devicon-chrome-plain"></i></li>
           </ul>
-          <p>
+          <p role="contentinfo">
             One of the best parts about being a developer is finding more efficient ways of accomplishing a 
             time consuming task. Knowing the tools to use (and creating them!) to help ensure a quality product 
             and seamless integration is crucial to any project. For continuous integration, I use <strong>
@@ -246,7 +246,7 @@
           <ul class="skill-list">
             <li class="row skill-title"><span></span><i class="fas fa-search space"></i>Analytics</span></li> 
           </ul>
-          <p>
+          <p role="contentinfo">
             Before beginning my journey as a web developer, I received a <strong>Bachelor's Degree in American History 
               </strong>and learned the joy of analysis. I am never satisfied until I understand the inner-workings of whatever 
             my current obsession is. I have since been able to leverage that drive for understanding into 
@@ -263,8 +263,8 @@
       <div class="container intro-contact">
         <div class="row contact-icons">
           <div class="contact-me">
-            <p>I want to help <strong>solve your problem</strong>. Let's Talk!</p>
-            <p class="smaller-contact">I am currently seeking a position as a web developer in Jacksonville, Atlanta, Denver, and Las Vegas.</p>
+            <p role="contentinfo">I want to help <strong>solve your problem</strong>. Let's Talk!</p>
+            <p class="smaller-contact" role="contentinfo">I am currently seeking a position as a web developer in Jacksonville, Atlanta, Denver, and Las Vegas.</p>
             <div class="line"></div>
           </div>
           <div class="icons"> 
