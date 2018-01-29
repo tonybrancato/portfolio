@@ -46,7 +46,6 @@ function hideNav() {
 function getYear() {
   let d = new Date();
   let n = d.getFullYear();
-  console.log(n);
   return n;
 }
 
