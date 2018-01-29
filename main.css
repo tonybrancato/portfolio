@@ -8,6 +8,19 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+.navbar {
+  background: rgb(63,76,107); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(63,76,107,1) 0%, rgba(63,76,107,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-position: top right;
+  box-shadow: 1px .5px 2px #000;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+  color: white;
+}
+
 .title, h1, .project-title, .skill-title {
   font-family: 'Space Mono', monospace;
 }
@@ -78,7 +91,7 @@ body {
 }
 
 #contact {
-  background-image: url('./imgs/polygon-10.jpg');
+  background-image: url('./imgs/polygon-16.jpg');
 }
 
 .section-title {
@@ -147,18 +160,17 @@ body {
   font-family: 'Space Mono', monospace;
 }
 
-.contact-icons a {
+.contact-icons a, .nav-link, .navbar-inverse .navbar-brand{
   transition: color 0.3s ease-in-out, 
               font-size 0.6s ease-in-out,
               text-shadow 0.5s ease-in-out;
   text-decoration: none;
-  color: snow;
+  color: white;
   text-shadow: 0 0 5px #000;
 }
 
 .contact-icons a:hover {
-  color: white;
-  font-size: 42pt;
+  font-size: 38pt;
   color: #ffeb3b;
   text-shadow: 0 0 5px;
 }
@@ -173,13 +185,13 @@ body {
   cursor: pointer;
 }
 
-a .project-title {
+a .project-title, #contact .contact-me strong{
   color: white;
   transition: text-shadow 0.6s ease-in-out,
               color 0.6s ease-in-out;
 }
 
-a .project-title:hover {
+a .project-title:hover, #contact:hover .contact-me strong, .navbar-inverse .navbar-nav .nav-link:hover, .navbar-inverse , .navbar-inverse .navbar-toggler:hover, .navbar-inverse .navbar-brand:hover {
   text-shadow: 0 0 5px;
   color: #ffeb3b;
 }
@@ -272,12 +284,33 @@ ul.skill-list {
 }
 
 .contact-section {
+  width: 100%;
+}
+
+.contact-section div {
   text-align: center;
 }
 
-.contact-section .row {
-  width: 100%;
+.line {
+  border-bottom: 3px solid white;
+  box-shadow: 1px 1px 1px #000;
+  margin-top: 70px;
+  margin-bottom: 90px;
 }
+
+.contact-me {
+  font-size: 36pt;
+}
+
+.smaller-contact {
+  font-size: 20pt;
+  padding: 20px 70px 20px 70px;
+}
+
+#contact .intro-contact{
+  padding: 130px 0 130px 0;
+}
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -457,6 +490,30 @@ ul.skill-list {
   }
   li.row.skill-title, .skill-title span{
     display: block;
+  }
+  .line {
+    border-bottom: 3px solid white;
+    box-shadow: 1px 1px 1px #000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-me {
+    font-size: 20pt;
+  }
+  
+  .smaller-contact {
+    font-size: 12pt;
+    padding: 3px 20px 3px 20px;
+  }
+  .contact-text{
+    display: none;
+  }
+  .icons {
+    font-size: 36pt;
+  }
+  #contact .intro-contact{
+    padding: 15px 0 15px 0;
   }
 }
 
