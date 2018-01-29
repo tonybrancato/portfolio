@@ -9,12 +9,17 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
-.title, h1, .project-title {
+.title, h1, .project-title, .skill-title {
   font-family: 'Space Mono', monospace;
 }
 
 .row {
   margin: 0 auto;
+}
+
+.fas, [class*=" devicon-"], [class^=devicon-]{
+  /* Makes Font Awesome & Dev Icons vertically aligned w/ text */
+  line-height: inherit; 
 }
 
 .intro, #skills, #contact, #projects {
@@ -23,11 +28,15 @@ body {
   background-position: center;
 }
 
-#projects {
+#projects,  #skills {
   height: 100%; 
 }
 
- #skills, #contact {
+.skills-list {
+  padding: 20px 40px 20px 40px;
+}
+
+ #contact {
   height: 100vh;
 }
 
@@ -38,7 +47,7 @@ body {
 .intro {
   background-image: url('./imgs/aqua-poly.jpg');
   filter: grayscale(30%);
-  height: 90vh;
+  height: 100vh;
 }
 
 .intro-header {
@@ -58,7 +67,7 @@ body {
 
 #skills {
   background-image: url('./imgs/polygon-22.jpg');
-  filter: grayscale(30%);
+  filter: grayscale(40%);
 }
 
 #contact {
@@ -106,6 +115,20 @@ body {
   margin-top: 20px;
 }
 
+.arrow {
+  margin-top: 40px;
+  display: block;
+}
+
+.arrow i {
+  font-size: 56pt;
+  transition: font-size 0.6s ease-in-out;
+}
+
+.arrow i:hover {
+  font-size: 72pt;
+}
+
 .contact-text {
   font-family: 'Space Mono', monospace;
 }
@@ -114,6 +137,7 @@ body {
   transition: color 0.3s ease-in-out, font-size 0.6s ease-in-out;
   text-decoration: none;
   color: snow;
+  text-shadow: 0 0 5px #000;
 }
 
 .contact-icons a:hover {
@@ -159,11 +183,11 @@ a .project-title {
 
 .project-techs ul {
   text-align: left;
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid white;
   padding: 0;
 }
 
-.project-techs li {
+.project-techs li, .skill-list li {
   text-decoration: none;
   display: inline-block;
   font-size: 30pt;
@@ -175,8 +199,36 @@ a .project-title {
   margin-right: 12px;
 }
 
-.project-content p {
+.project-content p, .skill-box P {
   font-size: 14.8pt;
+}
+
+.skill-box {
+  margin-bottom: 20px;
+}
+
+.skill-box strong, .skill-title, .section-title, .name, .project-title {
+  text-shadow: 0 0 5px #000;
+}
+
+.skill-title {
+  font-size: 28pt;
+}
+
+.skill-box p {
+  margin: 5px;
+  padding: 5px;
+}
+
+i.space {
+  margin-right: 10px;
+}
+
+ul.skill-list {
+  padding: 0;
+  margin: 0;
+  border-bottom: 3px solid white;
+  box-shadow: 0 0.5px  #000;
 }
 
 /* 
@@ -208,14 +260,14 @@ a .project-title {
   }
   .intro-header {
     padding: 0;
-    font-size: 14pt;
+    font-size: 18pt;
   }
   .intro-content {
     font-size: 14pt;
     padding-left: 40px;
   }
   .name {
-    font-size: 22pt;
+    font-size: 30pt;
   }
   .section-title {
     font-size: 25pt;  
