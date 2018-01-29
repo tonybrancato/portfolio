@@ -309,7 +309,7 @@ ul.skill-list {
 }
 
 footer {
-  color: #000;
+  color: #fafafa;
   background-color: #666;
   height: 30px;
   line-height: 32px;
@@ -514,11 +514,9 @@ footer {
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  
   .contact-me {
     font-size: 20pt;
   }
-  
   .smaller-contact {
     font-size: 12pt;
     padding: 3px 20px 3px 20px;
