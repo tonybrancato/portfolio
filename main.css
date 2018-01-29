@@ -200,12 +200,11 @@ a .project-title:hover, #contact:hover .contact-me strong, .navbar-inverse .navb
   max-width: 100%;  
   border: 5px solid rgba(255, 255, 255, .4);
   box-shadow: 0 0 10px white;
-  transition: all .2s ease-in-out;
+  transition: all .2s ease-in;
 }
 
 .project img:hover {
-  box-shadow: 0 0 25px white;
-  transform: scale(1.2);
+  box-shadow: 0 0 20px #ffeb3b;
   cursor: pointer;
 }
 
