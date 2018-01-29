@@ -87,6 +87,9 @@
               <a href="mailto:tonybrancato1@gmail.com" target="_blank"><i class="far fa-envelope"> <span class="contact-text">E-Mail</span></i></a><span> |</span>
               <a href="https://github.com/tonybrancato" target="_blank"><i class="fab fa-github"> <span class="contact-text">Git Hub</span></i></a>
             </div>
+            <div class="row contact-icons arrow">
+              <a href="#projects"><i class="fas fa-angle-double-down"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -139,7 +142,6 @@
                     <a href="https://quiet-oasis-80361.herokuapp.com/" target="_blank">
                       <li><span class="project-title">GameKeeper</span></li>  
                     </a>
-                    <div>                  
                       <li><i class="devicon-nodejs-plain"></i></li>
                       <li><i class="devicon-express-original"></i></li>   
                       <li><i class="devicon-mongodb-plain"></i></li>
@@ -148,7 +150,6 @@
                       <li><i class="devicon-mocha-plain"></i></li>                               
                       <li><i class="devicon-html5-plain-wordmark"></i></li>
                       <li><i class="devicon-css3-plain-wordmark"></i></li>
-                    </div>  
                   </ul>
                 </div>
                 <div class="project-content">
@@ -202,22 +203,71 @@
       <div class="container section">
         <h1 class="section-title"><i class="fas fa-terminal"></i> My Skills</h1>
       </div>
-      <div class="row">
-          <ul>
-              <li><i class="devicon-react-original-wordmark"></i></li>                     
-              <li><i class="devicon-nodejs-plain"></i></li>
-              <li><i class="devicon-express-original"></i></li>   
-              <li><i class="devicon-mongodb-plain"></i></li>
-              <li><i class="devicon-javascript-plain"></i></li>
-              <li><i class="devicon-mocha-plain"></i></li>                               
-              <li><i class="devicon-html5-plain-wordmark"></i></li>
-              <li><i class="devicon-css3-plain-wordmark"></i></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+      <div class="container skills-list">
+        <div class="skill-box">
+          <ul class="skill-list">
+            <li><span class="row skill-title"><i class="fas fa-code space"></i>Front End Development</span></li>                    
+            <li><i class="devicon-react-original-wordmark"></i></li>                     
+            <li><i class="devicon-javascript-plain"></i></li>                              
+            <li><i class="devicon-html5-plain-wordmark"></i></li>
+            <li><i class="devicon-css3-plain-wordmark"></i></li>                             
+          </ul> 
+          <p>
+            When crafting on the front end I love using <strong>React</strong> to build user 
+            interfaces. Finding new <strong>CSS</strong> tricks is quickly becoming a passion. There is 
+            something inherintly exciting about seeing a UI and it's styles come to life. For state 
+            management, I use <strong>Redux</strong> and am excited to build additional projects with it. 
+            I deploy React and static projects with <strong>Netlify</strong>.
+          </p>
+        </div>
+        <div class="skill-box">
+          <ul class="skill-list">
+            <li><span class="row skill-title"><i class="fas fa-database space"></i> Back End Development</span></li>                    
+            <li><i class="devicon-nodejs-plain"></i></li>
+            <li><i class="devicon-express-original"></i></li>   
+            <li><i class="devicon-mongodb-plain"></i></li>
+            <li><i class="devicon-javascript-plain"></i></li>
+            <li><i class="devicon-mocha-plain"></i></li>
+            <li><i class="devicon-heroku-plain"></i></li>                               
+          </ul> 
+          <p>
+            The Back End is where I feel most at home when coding. I use <strong>Node.JS</strong> and the 
+            <strong>Express</strong> framework. I use <strong>MongoDB</strong> for a database in conjunction 
+            with <strong>Mongoose</strong> for schemas, business logic, and validation. For testing endpoints, 
+            I use <strong>Mocha</strong> and <strong>Chai</strong>. I deploy my APIs wih <strong>Heroku</strong> 
+            and use <strong>mLab</strong> for project-level database management.
+          </p>           
+        </div>
+        <div class="skill-box">
+          <ul class="skill-list">
+            <li><span class="row skill-title"><i class="fas fa-wrench space"></i>Tools</span></li> 
+            <li><i class="devicon-git-plain"></i></li>
+            <li><i class="devicon-github-plain"></i></li>                                                   
+            <li><i class="devicon-visualstudio-plain"></i></li>
+            <li><i class="devicon-travis-plain"></i></li>
+            <li><i class="devicon-chrome-plain"></i></li>
+          </ul>
+          <p>
+            One of the best parts about being a developer is finding more efficient ways of accomplishing a 
+            time consuming task. Knowing the tools to use (and creating them!) to help ensure a quality product 
+            and seamless integration is crucial to any project. For continuous integration, I use <strong>
+            Travis CI</strong>. I utilize <strong>Git</strong> for version control and <strong>Git Hub</strong> 
+            for repository management. In recent months I have become quite partial to <strong>Visual Studio 
+            Code</strong> as a text editor. And of course, <strong>Chrome Dev Tools</strong> is an indispensable 
+            piece of any web-developer's repertoire.
+          </p>
+        </div>
+        <div class="skill-box">
+          <ul class="skill-list">
+            <li><span class="row skill-title"><i class="fas fa-search space"></i>Analytics</span></li> 
+          </ul>
+          <p>
+            Before beginning my journey as a web developer, I received a <strong>Bachelor's Degree in American History 
+              </strong>and learned the joy of analysis. I am never satisfied until I understand the inner-workings of whatever 
+            my current obsession is. I have since been able to leverage my that drive for understanding into 
+            carrer-applicable analytical skills.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -228,7 +278,7 @@
     </section>
 
   </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="./app.js"></script>
 </body>
