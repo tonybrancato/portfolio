@@ -48,7 +48,7 @@ body {
   background-position: center;
 }
 
-#projects,  #skills {
+#projects,  #skills, .intro {
   height: 100%; 
 }
 
@@ -68,7 +68,6 @@ body {
 .intro {
   background-image: url('./imgs/aqua-poly.jpg');
   filter: grayscale(18%);
-  height: 100vh;
 }
 
 .intro-header {
@@ -267,7 +266,6 @@ ul.skill-list {
   padding: 0;
   margin: 0;
   border-bottom: 3px solid white;
-  box-shadow: 0px 0.5px 0 #000;
 }
 
 .skill-box span, .skill-box strong, .skill-box .skill-title {
