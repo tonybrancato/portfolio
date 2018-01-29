@@ -43,7 +43,15 @@ function hideNav() {
   });
 }
 
+function getYear() {
+  let d = new Date();
+  let n = d.getFullYear();
+  console.log(n);
+  return n;
+}
+
 $(function (){
   smoothScroll();
   hideNav();
+  $( ".footer" ).append( `<span>&copy; Tony Brancato ${getYear()}`);
 })
