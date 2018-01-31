@@ -48,6 +48,10 @@ body {
   background-position: center;
 }
 
+.intro {
+  padding: 40px 20px 40px 20px;
+}
+
 #projects,  #skills, .intro {
   height: 100%; 
 }
@@ -86,8 +90,7 @@ body {
 }
 
 #skills {
-  background-image: url('./imgs/polygon-22.jpg');
-  filter: grayscale(40%);
+  background-image: url('./imgs/polygon-20.jpg');
 }
 
 #contact {
@@ -121,7 +124,6 @@ body {
   display: inline-block;
   max-width: 100%;
   text-align: left;
-  max-height: 150px;
 }
 
 .intro-contact {
@@ -138,22 +140,22 @@ body {
 
 .contact-icons {
   display: inline-block;
-  font-size: 36pt;
+  font-size: 30pt;
   margin-top: 20px;
 }
 
 .arrow {
-  margin-top: 40px;
+  margin-top: 30px;
   display: block;
 }
 
 .arrow i {
-  font-size: 56pt;
+  font-size: 36pt;
   transition: font-size 0.6s ease-in-out;
 }
 
 .arrow i:hover {
-  font-size: 72pt;
+  font-size: 36.5pt;
 }
 
 .contact-text {
@@ -170,7 +172,7 @@ body {
 }
 
 .contact-icons a:hover {
-  font-size: 40pt;
+  font-size: 30.5pt;
   color: #ffeb3b;
   text-shadow: 0 0 5px;
 }
@@ -308,6 +310,10 @@ ul.skill-list {
   padding: 130px 0 130px 0;
 }
 
+.icons {
+  margin-top: 80px;
+}
+
 footer {
   color: #fafafa;
   background-color: #666;
@@ -359,9 +365,15 @@ footer {
     padding: 0;
     font-size: 18pt;
   }
+  .intro-content-box {
+    padding: 30px;
+  }
   .intro-content {
-    font-size: 14pt;
-    padding-left: 40px;
+    font-size: 12pt;
+    /* padding: 30px; */
+  }
+  p.intro-content{
+    margin: 0;
   }
   .name {
     font-size: 30pt;
@@ -377,6 +389,9 @@ footer {
   }
   .intro-content {
     max-height: none;
+  }
+  .arrow {
+    display: none;
   }
   .contact-icons {
     font-size: 26pt;
@@ -407,6 +422,10 @@ footer {
   .project img:hover {
     transform: none;
   }
+  .profile-pic {
+    margin: 0 auto;
+    max-width: 70%;
+  }
 }
 
 /* 
@@ -417,6 +436,9 @@ footer {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .intro, #skills, #contact, #projects {
     height: 100%;
+  }
+  .arrow {
+    display: none;
   }
 }
 
@@ -439,6 +461,12 @@ footer {
   }
   .project img:hover {
     transform: none;
+  }
+  .contact-text{
+    display: none;
+  }
+  .arrow {
+    display: none;
   }
 }
 
@@ -474,7 +502,10 @@ footer {
     max-height: none;
   }
   .contact-icons {
-    font-size: 20pt;
+    font-size: 28pt;
+  }
+  .arrow {
+    display: none;
   }
   .project img {
     margin-bottom: 20px;
@@ -525,7 +556,7 @@ footer {
     display: none;
   }
   .icons {
-    font-size: 36pt;
+    font-size: 28pt;
   }
   #contact .intro-contact{
     padding: 15px 0 15px 0;
