@@ -52,5 +52,5 @@ function getYear() {
 $(function (){
   smoothScroll();
   hideNav();
-  $( ".footer" ).append( `<span>&copy; Tony Brancato ${getYear()}`);
+  $( ".footer" ).append( `<span>&copy; ${getYear()} Tony Brancato`);
 })
