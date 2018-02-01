@@ -1,6 +1,6 @@
 # Portfolio - Tony Brancato
 
-## [Live Site](tonybrancato.co)
+## [Live Site](http://tonybrancato.co)
 
 ## Technologies Used
   * HTML5
