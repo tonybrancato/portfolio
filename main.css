@@ -52,7 +52,7 @@ body {
   padding: 40px 20px 40px 20px;
 }
 
-#projects,  #skills, .intro {
+#projects,  #skills, {
   height: 100%; 
 }
 
@@ -60,7 +60,7 @@ body {
   padding: 20px 40px 20px 40px;
 }
 
- #contact {
+ #contact, .intro {
   height: 100vh;
   box-shadow: 10px 10px 20px #333;
 }
@@ -193,7 +193,7 @@ a .project-title, #contact .contact-me strong{
               color 0.6s ease-in-out;
 }
 
-a .project-title:hover, #contact:hover .contact-me strong, .navbar-inverse .navbar-nav .nav-link:hover, .navbar-inverse , .navbar-inverse .navbar-toggler:hover, .navbar-inverse .navbar-brand:hover {
+a .project-title:hover, #contact:hover, #contact strong:active, .contact-me strong, .navbar-inverse .navbar-nav .nav-link:hover, .navbar-inverse , .navbar-inverse .navbar-toggler:hover, .navbar-inverse .navbar-brand:hover {
   text-shadow: 0 0 5px;
   color: #ffeb3b;
 }
@@ -324,7 +324,7 @@ footer {
 }
 
 @media (min-width: 1281px) and (max-width: 1440px) {
-  .intro, #skills, #contact, #projects {
+  #skills, #contact, #projects {
     height: 100%;
   }
   .intro {
@@ -337,7 +337,10 @@ footer {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .intro, #skills, #contact, #projects {
+  .intro {
+    height: 100vh;
+  }
+  #skills, #contact, #projects {
     height: 100%;
   }
   .profile-pic img {
