@@ -193,7 +193,7 @@ a .project-title, #contact .contact-me strong{
               color 0.6s ease-in-out;
 }
 
-a .project-title:hover, #contact:hover, #contact strong:active, .contact-me strong, .navbar-inverse .navbar-nav .nav-link:hover, .navbar-inverse , .navbar-inverse .navbar-toggler:hover, .navbar-inverse .navbar-brand:hover {
+a .project-title:hover, #contact:hover .contact-me strong, #contact:active .contact-me strong .navbar-inverse .navbar-nav .nav-link:hover, .navbar-inverse , .navbar-inverse .navbar-toggler:hover, .navbar-inverse .navbar-brand:hover {
   text-shadow: 0 0 5px;
   color: #ffeb3b;
 }
