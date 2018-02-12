@@ -327,6 +327,12 @@ footer {
   font-size: 10pt;
 }
 
+@media screen and (max-height: 850px) {
+  .intro {
+    height: 100%;
+  }
+}
+
 @media (min-width: 1281px) and (max-width: 1440px) {
   #skills, #contact, #projects {
     height: 100%;
