@@ -4,8 +4,23 @@
 
 body {
   color: white;
+  line-height: 1.5;
   padding: 0;
   font-family: 'Work Sans', sans-serif;
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
 }
 
 .navbar {
@@ -15,9 +30,33 @@ body {
   background: linear-gradient(45deg, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-position: top right;
   box-shadow: 1px .5px 2px #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  float: left;
 }
 
-.navbar-inverse .navbar-nav .nav-link {
+.navbar-links, .navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links {
+  padding: 0;
+  margin-left: 10px;
+}
+
+.nav-home {
+  font-size: 1.25rem;
+}
+
+.nav-item {
+  margin: 0 10px 0 10px;
+  font-size: 1rem;
+}
+
+.nav-link, nav a, nav a:visited {
   color: white;
 }
 
@@ -52,7 +91,7 @@ body {
   padding: 40px 20px 40px 20px;
 }
 
-#projects,  #skills, {
+#projects,  #skills, .intro {
   height: 100%; 
 }
 
@@ -60,7 +99,7 @@ body {
   padding: 20px 40px 20px 40px;
 }
 
- #contact, .intro {
+ #contact {
   height: 100vh;
   box-shadow: 10px 10px 20px #333;
 }
@@ -86,6 +125,7 @@ body {
 .name {
   font-size: 36pt;
   letter-spacing: 1.1px;
+  font-weight: 400;
 }
 
 #projects {
@@ -120,7 +160,7 @@ body {
 }
 
 .intro-content-box {
-  padding: 50px 5px 30px 20px;
+  padding: 50px 5px 20px 40px;
   font-size: 20px;
 }
 
@@ -146,6 +186,7 @@ body {
   display: inline-block;
   font-size: 30pt;
   margin-top: 20px;
+  max-width: 100%;
 }
 
 .arrow {
@@ -166,7 +207,7 @@ body {
   font-family: 'Space Mono', monospace;
 }
 
-.contact-icons a, .nav-link, .navbar-inverse .navbar-brand{
+.contact-icons a, .nav-link, .nav-home {
   transition: color 0.3s ease-in-out, 
               font-size 0.3s ease-in-out,
               text-shadow 0.3s ease-in-out;
@@ -197,7 +238,13 @@ a .project-title, #contact .contact-me strong{
               color 0.6s ease-in-out;
 }
 
-a .project-title:hover, #contact:hover .contact-me strong, #contact:active .contact-me strong .navbar-inverse .navbar-nav .nav-link:hover, .navbar-inverse , .navbar-inverse .navbar-toggler:hover, .navbar-inverse .navbar-brand:hover {
+/* a .project-title, #contact .contact-me strong{
+  color: white;
+  transition: text-shadow 0.6s ease-in-out,
+              color 0.6s ease-in-out;
+} */
+
+a .project-title:hover, #contact:hover .contact-me strong, #contact:active .contact-me strong, .nav-link:hover, .nav-home:hover {
   text-shadow: 0 0 5px;
   color: #ffeb3b;
 }
@@ -214,16 +261,17 @@ a .project-title:hover, #contact:hover .contact-me strong, #contact:active .cont
   cursor: pointer;
 }
 
-.project-box {
-  padding: 0;
-}
-
 .project {
   min-width: 100%;
   margin-top: 30px;
 }
 
+.project p {
+  padding: 0 5px;
+}
+
 .project-techs ul {
+  line-height: 1.5;
   text-align: left;
   border-bottom: 3px solid white;
   padding: 0;
@@ -269,6 +317,7 @@ i.space {
 }
 
 ul.skill-list {
+  /* line-height: 1.5; */
   padding: 0;
   margin: 0;
   border-bottom: 3px solid white;
@@ -282,8 +331,7 @@ ul.skill-list {
 .skill-box:hover span, .skill-box:hover strong, .skill-box:hover .skill-title {
   color: #ffeb3b;
   text-shadow: 1px 0 2px #000,
-               1 0 2px #ffeb3b;
-               
+               1 0 2px #ffeb3b;              
 }
 
 .contact-section {
@@ -327,6 +375,12 @@ footer {
   font-size: 10pt;
 }
 
+@media screen and (max-height: 850px) {
+  .intro {
+    height: 100%;
+  }
+}
+
 @media (min-width: 1281px) and (max-width: 1440px) {
   #skills, #contact, #projects {
     height: 100%;
@@ -341,9 +395,6 @@ footer {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .intro {
-    height: 100vh;
-  }
   #skills, #contact, #projects {
     height: 100%;
   }
@@ -368,6 +419,9 @@ footer {
   .intro, #skills, #contact, #projects {
     height: 100%;
   }
+  .project-content p, .skill-box p, p {
+    font-size: 13pt;
+  }
   .intro-header {
     padding: 0;
     font-size: 18pt;
@@ -375,24 +429,14 @@ footer {
   .intro-content-box {
     padding: 30px;
   }
-  .intro-content {
-    font-size: 12pt;
-    /* padding: 30px; */
-  }
   p.intro-content{
-    margin: 0;
+    margin: 0 0 10px;
   }
   .name {
     font-size: 30pt;
   }
   .section-title {
     font-size: 25pt;  
-  }
-  .project-content p {
-    font-size: 12pt;
-  }
-  .intro-content-box {
-    padding: 0;
   }
   .intro-content {
     max-height: none;
@@ -409,14 +453,11 @@ footer {
   .project-title {
     font-size: 18pt;
   }
-  .project-techs a, .skill-list span {
+ .skill-list span {
     display: block;
   }
-  .project-techs li{
-    font-size: 18pt;
-  }
-  .skill-list li {
-    font-size: 19pt;
+  .project-techs li, .skill-list li{
+    font-size: 20pt;
   }
   [class^="devicon"] {
     margin-left: -5px;
@@ -486,6 +527,13 @@ footer {
   .intro, #skills, #contact, #projects {
     height: 100%;
   }
+  .nav-home {
+    font-size: 1.1rem;
+  }
+  .nav-item {
+    margin: 0 10px 0 10px;
+    font-size: .9rem;
+  }  
   .intro-header {
     padding: 0;
     font-size: 14pt;
@@ -496,7 +544,7 @@ footer {
   .name {
     font-size: 22pt;
   }
-  .section-title {
+  .section-title, h1{
     font-size: 25pt;  
   }
   .project-content p {
@@ -533,10 +581,10 @@ footer {
     margin: 0;
   }
   .skills-list {
-    padding: 8px 0px 8px 0px;
+    padding: 10px 15px 10px;
   }
   .skill-list li {
-    font-size: 16pt;
+    font-size: 14pt;
   }
   .skill-title  {
     word-spacing: -7px;
