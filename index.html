@@ -6,38 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ise=edge">
   <link rel="icon" type="image/png" href="/favicon.ico?" sizes="32x32" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="./grid.css">
   <link rel="stylesheet" href="./main.css">
   <title>Tony Brancato</title>
 </head>
 <body>
   <header role="banner">
-    <nav role="navigation" class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-faded">
+    <nav role="navigation" class="navbar">
       <div class="container">  
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#intro">&lt;TB /&gt;</a>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">My Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">My Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+        <a class="nav-home" href="#intro">&lt;TB /&gt;</a>
+          <ul class="navbar-links">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">My Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">My Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </nav>
   </header>
+
   <main role="main">
 
     <section id="intro">
@@ -52,7 +47,7 @@
             <div class="profile-pic col-5">
               <img alt="Tony Brancato" src="./imgs/placeholder.png">
             </div>
-            <div class="col-7 row intro-content-box">
+            <div class="col-7 intro-content-box">
               <p role="contentinfo" class="intro-content">
                   I’m a full stack web developer and recent graduate of <a href="https://thinkful.com"><span class="yellow">
                   Thinkful</span></a>, where I learned to translate my passion for solving problems 
@@ -84,121 +79,119 @@
 
     <section id="projects" role="content">
       <div class="section container">
-        <div class="project-title">
           <h1 class="section-title"> <i class="fas fa-terminal"></i> My Projects</h1>
-        </div>
-        <div class="project-box">
+      </div>
+      <div class="project-list container">
 
-          <div class="row project">
-            <div class="col-3">
-              <a target="_blank" href="https://tonybrancato.github.io/good-in-the-hood/">
-                <img alt="Good in the Hood App" src="./imgs/hood.png">
-              </a>
+        <div class="row project">
+          <div class="col-3">
+            <a target="_blank" href="https://tonybrancato.github.io/good-in-the-hood/">
+              <img alt="Good in the Hood App" src="./imgs/hood.png">
+            </a>
+          </div>
+          <div class=" col-9">
+            <div class="project-techs">
+              <ul class="good-hood">
+                <a target="_blank" href="https://tonybrancato.github.io/good-in-the-hood/">
+                  <li><span class="project-title">Good in the Hood</span></li> 
+                </a>                     
+                <li><i class="devicon-jquery-plain-wordmark"></i></li>
+                <li><i class="devicon-javascript-plain"></i></li>
+                <li><i class="devicon-html5-plain-wordmark"></i></li>
+                <li><i class="devicon-css3-plain-wordmark"></i></li>
+              </ul>
             </div>
-              <div class=" col-9">
-                <div class="project-techs">
-                  <ul class="good-hood">
-                    <a target="_blank" href="https://tonybrancato.github.io/good-in-the-hood/">
-                      <li><span class="project-title">Good in the Hood</span></li> 
-                    </a>                     
-                    <li><i class="devicon-jquery-plain-wordmark"></i></li>
-                    <li><i class="devicon-javascript-plain"></i></li>
-                    <li><i class="devicon-html5-plain-wordmark"></i></li>
-                    <li><i class="devicon-css3-plain-wordmark"></i></li>
-                  </ul>
-                </div>
-                <div class="project-content">
-                  <p role="contentinfo">Good in the Hood allows a user to find restaurants and nightlife in the neighborhood 
-                    they're currently standing in. The app is an API hack utilizing the Google Maps 
-                    API and the Zomato API. Utilizing the HTML5 Geolocation, the user is able to pinpoint
-                    their location and receive the most relevant results. The app also makes use of jQuery
-                    for DOM traversal. </p>
-                </div>
+            <div class="project-content">
+                <p role="contentinfo">Good in the Hood allows a user to find restaurants and nightlife in the neighborhood 
+                  they're currently standing in. The app is an API hack utilizing the Google Maps 
+                  API and the Zomato API. Utilizing the HTML5 Geolocation, the user is able to pinpoint
+                  their location and receive the most relevant results. The app also makes use of jQuery
+                  for DOM traversal. </p>
               </div>
           </div>
+        </div>  
 
-          <div class="row project">
-            <div class="col-3">
-              <a href="https://quiet-oasis-80361.herokuapp.com/" target="_blank">
-                <img alt="GameKeeper App" src="./imgs/gamekeeper2.png">
-              </a> 
-            </div>
-            <div class="col-9">
-                <div class="project-techs">
-                  <ul class="gamekeeper">
-                    <a href="https://quiet-oasis-80361.herokuapp.com/" target="_blank">
-                      <li><span class="project-title">GameKeeper</span></li>  
-                    </a>
-                      <li><i class="devicon-nodejs-plain"></i></li>
-                      <li><i class="devicon-express-original"></i></li>   
-                      <li><i class="devicon-mongodb-plain"></i></li>
-                      <li><i class="devicon-jquery-plain-wordmark"></i></li>
-                      <li><i class="devicon-javascript-plain"></i></li>
-                      <li><i class="devicon-mocha-plain"></i></li>                               
-                      <li><i class="devicon-html5-plain-wordmark"></i></li>
-                      <li><i class="devicon-css3-plain-wordmark"></i></li>
-                  </ul>
-                </div>
-                <div class="project-content">
-                  <p role="contentinfo">GameKeeper allows you to keep track of what games you have and how often they're
-                    played, regardless of their medium. Utilizing Node.JS with the Express Framework
-                    and MongoDB with Mongoose, a user can now keep track of every game they own. For 
-                    the front-end, I used jQuery for DOM manipulation and traversal and Velocity.js 
-                    for animations. Finally, I used Mocha and Chai for testing.</p>
-                </div>              
-            </div>
+        <div class="row project">
+          <div class="col-3">
+            <a href="https://quiet-oasis-80361.herokuapp.com/" target="_blank">
+              <img alt="GameKeeper App" src="./imgs/gamekeeper2.png">
+            </a> 
           </div>
-
-          <div class="row project">
-            <div class="col-3">
-              <a href="https://fitpets.netlify.com/" target="_blank">
-                <img alt="Fit Pets App" src="./imgs/fitpets.png">
-              </a>
-            </div>
-            <div class="col-9">
-                <div class="project-techs">
-                  <ul class="fitpets">
-                    <a href="https://fitpets.netlify.com/" target="_blank">
-                      <li class="project-title">Fit Pets</li> 
-                    </a>
-                    <li><i class="devicon-react-original-wordmark"></i></li>                     
+          <div class="col-9">
+              <div class="project-techs">
+                <ul class="gamekeeper">
+                  <a href="https://quiet-oasis-80361.herokuapp.com/" target="_blank">
+                    <li><span class="project-title">GameKeeper</span></li>  
+                  </a>
                     <li><i class="devicon-nodejs-plain"></i></li>
                     <li><i class="devicon-express-original"></i></li>   
                     <li><i class="devicon-mongodb-plain"></i></li>
+                    <li><i class="devicon-jquery-plain-wordmark"></i></li>
                     <li><i class="devicon-javascript-plain"></i></li>
                     <li><i class="devicon-mocha-plain"></i></li>                               
                     <li><i class="devicon-html5-plain-wordmark"></i></li>
                     <li><i class="devicon-css3-plain-wordmark"></i></li>
-                  </ul>
-                </div>
-                <div class="project-content">
-                  <p role="contentinfo">Fit Pets can help you track your dogs health so you can ensure that they maintain
-                    a healthy weight, or are on track to doing so. I used React for the front-end along
-                    with Redux for maintaining state. On the backend, I used MongoDB and Mongoose, along 
-                    with Node.js with the Express framework. Enzyme and Jest were used for unit testing
-                    in the React portion with Mocha and Chai being used on the backend. 
-                  </p>
-                </div>              
-            </div>
+                </ul>
+              </div>
+              <div class="project-content">
+                <p role="contentinfo">GameKeeper allows you to keep track of what games you have and how often they're
+                  played, regardless of their medium. Utilizing Node.JS with the Express Framework
+                  and MongoDB with Mongoose, a user can now keep track of every game they own. For 
+                  the front-end, I used jQuery for DOM manipulation and traversal and Velocity.js 
+                  for animations. Finally, I used Mocha and Chai for testing.</p>
+              </div>              
           </div>
-  
-        </div> 
-      </div>
+        </div>
+
+        <div class="row project">
+          <div class="col-3">
+            <a href="https://fitpets.netlify.com/" target="_blank">
+              <img alt="Fit Pets App" src="./imgs/fitpets.png">
+            </a>
+          </div>
+          <div class="col-9">
+              <div class="project-techs">
+                <ul class="fitpets">
+                  <a href="https://fitpets.netlify.com/" target="_blank">
+                    <li class="project-title">Fit Pets</li> 
+                  </a>
+                  <li><i class="devicon-react-original-wordmark"></i></li>                     
+                  <li><i class="devicon-nodejs-plain"></i></li>
+                  <li><i class="devicon-express-original"></i></li>   
+                  <li><i class="devicon-mongodb-plain"></i></li>
+                  <li><i class="devicon-javascript-plain"></i></li>
+                  <li><i class="devicon-mocha-plain"></i></li>                               
+                  <li><i class="devicon-html5-plain-wordmark"></i></li>
+                  <li><i class="devicon-css3-plain-wordmark"></i></li>
+                </ul>
+              </div>
+              <div class="project-content">
+                <p role="contentinfo">Fit Pets can help you track your dogs health so you can ensure that they maintain
+                  a healthy weight, or are on track to doing so. I used React for the front-end along
+                  with Redux for maintaining state. On the backend, I used MongoDB and Mongoose, along 
+                  with Node.js with the Express framework. Enzyme and Jest were used for unit testing
+                  in the React portion with Mocha and Chai being used on the backend. 
+                </p>
+              </div>              
+          </div>
+        </div>
+
+      </div> 
     </section>
 
     <section id="skills" role="content">
-      <div class="container section">
+      <div class="container">
         <h1 class="section-title"><i class="fas fa-terminal"></i> My Skills</h1>
       </div>
-      <div class="container skills-list">
+      <div class="skills-list container">
         <div class="skill-box">
           <ul class="skill-list">
-            <li class="row skill-title"><span><i class="fas fa-code space"></i>Front End Development</span></li>                    
+            <li class="skill-title"><span><i class="fas fa-code space"></i>Front End Development</span></li>                    
             <li><i class="devicon-react-original-wordmark"></i></li>                     
             <li><i class="devicon-javascript-plain"></i></li>                              
             <li><i class="devicon-html5-plain-wordmark"></i></li>
             <li><i class="devicon-css3-plain-wordmark"></i></li>                             
-          </ul> 
+          </ul>
           <p role="contentinfo">
             When crafting on the front end I love using <strong>React</strong> to build user 
             interfaces. Finding new <strong>CSS</strong> tricks is quickly becoming a passion. There is 
@@ -206,10 +199,10 @@
             management, I use <strong>Redux</strong> and am excited to build additional projects with it. 
             I deploy React and static projects with <strong>Netlify</strong>.
           </p>
-        </div>
+        </div> 
         <div class="skill-box">
           <ul class="skill-list">
-            <li class="row skill-title"><span><i class="fas fa-database space"></i> Back End Development</span></li>                    
+            <li class="skill-title"><span><i class="fas fa-database"></i> Back End Development</span></li>                    
             <li><i class="devicon-nodejs-plain"></i></li>
             <li><i class="devicon-express-original"></i></li>   
             <li><i class="devicon-mongodb-plain"></i></li>
@@ -227,7 +220,7 @@
         </div>
         <div class="skill-box">
           <ul class="skill-list">
-            <li class="row skill-title"><span></span><i class="fas fa-wrench space"></i>Tools</span></li> 
+            <li class="skill-title"><span></span><i class="fas fa-wrench space"></i>Tools</span></li> 
             <li><i class="devicon-git-plain"></i></li>
             <li><i class="devicon-github-plain"></i></li>                                                   
             <li><i class="devicon-visualstudio-plain"></i></li>
@@ -246,7 +239,7 @@
         </div>
         <div class="skill-box">
           <ul class="skill-list">
-            <li class="row skill-title"><span></span><i class="fas fa-search space"></i>Analytics</span></li> 
+            <li class="skill-title"><span></span><i class="fas fa-search space"></i>Analytics</span></li> 
           </ul>
           <p role="contentinfo">
             Before beginning my journey as a web developer, I received a <strong>Bachelor's Degree in American History 
@@ -274,14 +267,18 @@
           </div>
         </div>
     </section>
+
     <footer>
       <div class="container footer">
         <span></span>
       </div>
     </footer>
+
   </main>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="./app.js"></script>
+
 </body>
+
 </html>
