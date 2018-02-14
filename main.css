@@ -15,7 +15,7 @@ p {
   margin-bottom: 15px;
 }
 
-a, a:visited {
+a, a:visited, .project-content a:hover {
   text-decoration: none;
 }
 
@@ -142,6 +142,7 @@ h1 {
 }
 
 .section-title {
+  font-weight: 400;
   font-size: 40pt;  
   margin-bottom: 20px;
 }
@@ -174,9 +175,11 @@ h1 {
   width: 100%;
   text-align: center;
 }
+
 .intro p a {
   transition: text-shadow 0.4s ease-in-out;
 }
+
 .intro p a:hover {
   text-decoration: none;
   text-shadow: 0 0 5px;
@@ -207,7 +210,7 @@ h1 {
   font-family: 'Space Mono', monospace;
 }
 
-.contact-icons a, .nav-link, .nav-home {
+.contact-icons a, .nav-link, .nav-home, .project-content a {
   transition: color 0.3s ease-in-out, 
               font-size 0.3s ease-in-out,
               text-shadow 0.3s ease-in-out;
@@ -244,7 +247,7 @@ a .project-title, #contact .contact-me strong{
               color 0.6s ease-in-out;
 } */
 
-a .project-title:hover, #contact:hover .contact-me strong, #contact:active .contact-me strong, .nav-link:hover, .nav-home:hover {
+a .project-title:hover, #contact:hover .contact-me strong, #contact:active .contact-me strong, .nav-link:hover, .nav-home:hover, .project-content a:hover {
   text-shadow: 0 0 5px;
   color: #ffeb3b;
 }
@@ -271,7 +274,8 @@ a .project-title:hover, #contact:hover .contact-me strong, #contact:active .cont
 }
 
 .project-techs ul {
-  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 10px;
   text-align: left;
   border-bottom: 3px solid white;
   padding: 0;
@@ -419,7 +423,7 @@ footer {
   .intro, #skills, #contact, #projects {
     height: 100%;
   }
-  .project-content p, .skill-box p, p {
+  .project-content p, .skill-box p {
     font-size: 13pt;
   }
   .intro-header {
@@ -452,9 +456,6 @@ footer {
   }
   .project-title {
     font-size: 18pt;
-  }
- .skill-list span {
-    display: block;
   }
   .project-techs li, .skill-list li{
     font-size: 20pt;
@@ -527,6 +528,9 @@ footer {
   .intro, #skills, #contact, #projects {
     height: 100%;
   }
+  .block {
+    display: block;
+  }
   .nav-home {
     font-size: 1.1rem;
   }
@@ -578,13 +582,13 @@ footer {
     font-size: 12pt;
   }
   i.space {
-    margin: 0;
+    margin-right: 10px;
   }
   .skills-list {
     padding: 10px 15px 10px;
   }
   .skill-list li {
-    font-size: 14pt;
+    font-size: 14.8pt;
   }
   .skill-title  {
     word-spacing: -7px;
