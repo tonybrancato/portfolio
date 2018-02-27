@@ -475,6 +475,11 @@ footer {
     margin: 0 auto;
     max-width: 70%;
   }
+  .contact-icons a:hover {
+    font-size: 27pt;
+    color: #ffeb3b;
+    text-shadow: 0 0 5px;
+  }
 }
 
 /* 
